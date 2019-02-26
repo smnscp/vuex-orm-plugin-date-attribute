@@ -1,0 +1,27 @@
+{
+  "name": "vuex-orm-plugin-date-attribute",
+  "version": "0.1.0",
+  "description": "Vuex-ORM Plugin to enable date type attributes.",
+  "main": "src/index.ts",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git+https://github.com/smnscp/vuex-orm-plugin-date-attribute.git"
+  },
+  "keywords": [
+    "vue",
+    "vuex",
+    "vuex-plugin",
+    "vuex-orm",
+    "vuex-orm-plugin",
+    "date",
+    "datetime"
+  ],
+  "author": "Simon Schrape",
+  "license": "MIT",
+  "dependencies": {
+    "@vuex-orm/core": "^0.31.6"
+  },
+  "devDependencies": {
+  }
+}
