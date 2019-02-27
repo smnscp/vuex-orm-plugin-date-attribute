@@ -2,8 +2,9 @@
   "name": "vuex-orm-plugin-date-attribute",
   "version": "0.1.0",
   "description": "Vuex-ORM Plugin to enable date type attributes.",
-  "main": "src/index.ts",
+  "main": "dist/index.js",
   "scripts": {
+    "build": "webpack --mode=production"
   },
   "repository": {
     "type": "git+https://github.com/smnscp/vuex-orm-plugin-date-attribute.git"
@@ -23,5 +24,13 @@
     "@vuex-orm/core": "^0.31.6"
   },
   "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/plugin-transform-typescript": "^7.3.2",
+    "@babel/preset-env": "^7.3.4",
+    "babel-loader": "^8.0.5",
+    "typescript": "^3.3.3333",
+    "webpack": "^4.29.5",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.2.1"
   }
 }
