@@ -1,5 +1,8 @@
 # Vuex ORM Plugin: Date Attribute
 
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![License](https://img.shields.io/npm/l/vuex-orm-plugin-date-attribute.svg)](https://github.com/smnscp/vuex-orm-plugin-date-attribute/blob/master/LICENSE.md)
+
 ## Installation
 ``` js
 import VuexORM from '@vuex-orm/core'
