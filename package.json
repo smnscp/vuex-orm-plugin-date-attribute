@@ -1,6 +1,6 @@
 {
   "name": "vuex-orm-plugin-date-attribute",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Vuex-ORM Plugin to enable date type attributes.",
   "main": "dist/index.js",
   "scripts": {
