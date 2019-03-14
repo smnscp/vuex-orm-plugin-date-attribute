@@ -23,8 +23,12 @@ export default class DateType extends Type {
    * Convert given value to the date.
    */
   fix (value: any): Date | null {
-    if (value === undefined || value === null && this.isNullable) {
-      return this.value
+    if (value === null && this.isNullable) {
+      return null
+    }
+
+    if (value === undefined) {
+      return this.value || new Date()
     }
 
     return new Date(value)
