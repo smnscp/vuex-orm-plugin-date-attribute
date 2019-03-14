@@ -10,6 +10,9 @@ export default class DateType extends Type {
   constructor (model: typeof Model, value: Date | null, mutator?: Mutator<Date | null>) {
     /* istanbul ignore next */
     super(model, value, mutator)
+
+    // setting the default value to null implies this attribute is nullable
+    if (value === null) this.nullable()
   }
 
   /**
@@ -23,8 +26,10 @@ export default class DateType extends Type {
    * Convert given value to the date.
    */
   fix (value: any): Date | null {
-    if (value === null && this.isNullable) {
-      return null
+    if (this.isNullable) {
+      if (value === null || value === undefined && this.value === null) {
+        return null
+      }
     }
 
     if (value === undefined) {
